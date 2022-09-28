@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Produto } from '../models/produto';
 
 @Component({
   selector: 'app-editar-produto',
@@ -6,10 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class EditarProdutoComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
+ 
 }

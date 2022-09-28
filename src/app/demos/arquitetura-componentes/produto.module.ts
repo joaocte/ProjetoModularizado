@@ -10,9 +10,11 @@ import { ProdutoDashboardComponent } from './produto-dashboard/produto-dashboard
 import { ProdutoCardDetalheComponent } from './produto-card-detalhe/produto-card-detalhe.component';
 import { ProdutoCountComponent } from './produto-count/produto-count.component';
 import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
+import { ProdutoAppComponent } from './produto.app.component';
 
 @NgModule({
     declarations: [
+        ProdutoAppComponent,
         ProdutoDashboardComponent,
         ProdutoCardDetalheComponent,
         ProdutoCountComponent,
