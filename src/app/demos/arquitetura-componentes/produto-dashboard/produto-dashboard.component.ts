@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Produto } from '../models/produto';
 
 @Component({
@@ -55,6 +56,9 @@ export class ProdutoDashboardComponent implements OnInit {
       valor: 600,
       imagem: 'headset.jpg'
     }];
+  }  
+  mudarStatus(event: Produto){
+    event.ativo = !event.ativo;
   }
 
 }
