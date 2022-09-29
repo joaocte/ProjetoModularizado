@@ -11,6 +11,8 @@ import { ProdutoCardDetalheComponent } from './produto-card-detalhe/produto-card
 import { ProdutoCountComponent } from './produto-count/produto-count.component';
 import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
 import { ProdutoAppComponent } from './produto.app.component';
+import { ProdutoService } from './services/produto.service';
+import { ProdutosResolve } from './services/produtos.resolve';
 
 @NgModule({
     declarations: [
@@ -23,6 +25,10 @@ import { ProdutoAppComponent } from './produto.app.component';
     imports: [
         CommonModule,
         ProdutoRoutingModule
+    ],
+    providers: [
+        ProdutoService,
+        ProdutosResolve
     ],
     exports: []
 })
